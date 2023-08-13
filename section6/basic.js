@@ -46,7 +46,7 @@ regex = /<(?<tag>\w+>)[\w\s]+<\/\k<tag>/g;
 
 // Using Lookahead Groups ?=
 text = "allthingsjavascript.com";
-// 해당 조건이 포함되어 있어야 하지만, 찾아지지는 않는다
+// 전방 탐색(lookahead)이란 작성한 패턴에 일치하는 영역이 존재하여도 그 값이 제외되어서 나오는 패턴입니다. 전방 탐색 기호는 ?= 이며, = 다음에 오는 문자가 일치하는 영역에서 제외됩니다. 또한, 전방 탐색은 하위 표현식과 같이 소괄호로 감싸주어야만 합니다.
 // allthingsjavascript (도메인 일부만 포함)
 regex = /\w+(?=\.com)/g;
 
